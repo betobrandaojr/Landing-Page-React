@@ -1,0 +1,27 @@
+.counteiner-whoweare{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 5rem;
+}
+
+.WhoWeAre-text p {
+    display: flex;
+    margin: auto;
+    padding: 200px;
+    text-align: center;
+    max-width: 90%;
+    line-height: 1.6;
+    animation: fadeIn 4s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
