@@ -9,7 +9,7 @@
     padding: 200px;
 }
 
-.WhoWeAre-text p {
+.WhoWeAre-text p, h1 {
     display: flex;
     margin: auto;
     padding: 1rem;
@@ -25,6 +25,7 @@
     align-items: center;
     width: 100%;
     text-align: center;
+    
 }
 
 

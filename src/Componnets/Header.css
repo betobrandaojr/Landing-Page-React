@@ -83,5 +83,7 @@
 }
 
 .scroll-down-button:hover {
-    transform: translateX(-50%) scale(1.1); 
+    transform: translateX(-50%) scale(1.2);
+    background-color: #7F00B2;
+    color: white;
 }

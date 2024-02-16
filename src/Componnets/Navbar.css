@@ -32,10 +32,11 @@
     margin: 0 10px;
     transition: color 0.3s;
     font-weight: bold;
+    padding-right: 5px;
 }
 
 .navbar-links a:hover {
-    color: #009929;
+    color: #7F00B2;
 }
 
 .navbar-icons {
@@ -56,7 +57,7 @@
 
 .navbar-icons a:hover {
     transform: scale(1.1);
-    color: #009929;
+    color: #7F00B2;
 }
 
 .navbar-icons svg {

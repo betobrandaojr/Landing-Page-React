@@ -11,7 +11,14 @@ const AboutSection = () => {
 
     return (
         <section className='Section-About-Section'>
-            <h2 className="section-title">Quem Somos</h2>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={variants}
+            >
+                <h2 className="section-title">Quem Somos</h2>
+            </motion.div>
             <div className="about-section">
                 <motion.div
                     className="column left"
