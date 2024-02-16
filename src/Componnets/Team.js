@@ -5,8 +5,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Team.css';
 import perfil1 from '../Assets/img/perfil-1.jpg';
 import perfil2 from '../Assets/img/perfil-2.webp';
-import perfil3 from '../Assets/img/perfil-3.webp';
-import perfil4 from '../Assets/img/perfil-4.jpg';
+
 
 const teamMembers = [
   {
