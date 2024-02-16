@@ -69,7 +69,7 @@ const TeamSection = () => {
             <p>{member.role}</p>
             <p>{member.description}</p>
             <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} className="fa-linkedin" />
+              <FontAwesomeIcon icon={faLinkedin} className="fa-linkedin-team" />
             </a>
           </div>
         </motion.div>
