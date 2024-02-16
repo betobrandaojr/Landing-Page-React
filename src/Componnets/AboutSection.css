@@ -5,6 +5,12 @@
     --background-gradient: linear-gradient(var(--primary-color), var(--secondary-color));
 }
 
+.Section-About-Section {
+    padding: 90px; /* Ajustado para unificar o padding */
+    background-image: var(--background-gradient);
+    border-radius: 20px;
+}
+
 .about-section {
     display: flex;
     width: 99.5%;
@@ -12,18 +18,15 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    padding-top: 2.5rem;
-    background-image: var(--background-gradient); /* Utilizando variável */
-    border-radius: 20px;
-    padding: 130px;
 }
 
-.section-title {
-    text-align: center;
-    margin: 0 auto; /* Centraliza horizontalmente caso necessário */
+.Section-About-Section .section-title {
+    margin: 0 auto;
     padding: 20px 0;
-    color: var(--text-color); /* Utilizando variável */
+    color: var(--text-color);
     font-size: 2rem;
+    text-align: center; /* Garante a centralização do texto */
+    animation: fadeIn 2s ease-out forwards; /* Aplica o efeito de fade-in */
 }
 
 .column {
@@ -33,11 +36,11 @@
 
 .column.left p {
     margin: 20px 0;
-    padding: 20px; /* Ajustado para menos padding que o original para evitar overflow */
+    padding: 20px;
     text-align: justify;
     max-width: 90%;
     line-height: 1.6;
-    color: var(--text-color); /* Ajustado para usar a variável */
+    color: var(--text-color);
     animation: fadeIn 2s ease-out forwards;
 }
 
@@ -46,7 +49,7 @@
     max-width: 70%;
     height: auto;
     border-radius: 15px;
-    margin: 0 auto; /* Centraliza a imagem */
+    margin: 0 auto;
     animation: fadeIn 4s ease-out forwards;
 }
 
@@ -73,12 +76,8 @@
         max-width: 100%;
     }
 
-    .column.left p {
-        padding: 20px; /* Ajustado para consistência em dispositivos móveis */
-    }
-
-    .column.right img {
+    .column.left p, .column.right img {
+        padding: 20px;
         max-width: 100%;
     }
 }
-

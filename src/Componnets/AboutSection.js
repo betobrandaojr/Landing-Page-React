@@ -10,7 +10,7 @@ const AboutSection = () => {
     };
 
     return (
-        <section>
+        <section className='Section-About-Section'>
             <h2 className="section-title">Quem Somos</h2>
             <div className="about-section">
                 <motion.div
