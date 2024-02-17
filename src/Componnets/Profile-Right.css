@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #6a10d1;
+  --secondary-color: #7F00B2;
+  --text-color: #FFF;
+  --background-color: #FFF; /* Preparado para uso futuro em temas claros/escuros */
+  --background-gradient: linear-gradient(var(--primary-color), var(--secondary-color));
+  /* Adicione variáveis para temas claros/escuros aqui, se necessário */
+}
+
+.team-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2rem;
+  gap: 20px;
+}
+
+.team-title-1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-color); /* Ajustado para usar a variável --text-color */
+}
+
+.team-member-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  background-color: #FFF; /* Mantido para base antes do degradê */
+  background-image: linear-gradient(315deg, rgba(255,255,255,0) 50%, var(--primary-color) 50.1%, var(--secondary-color) 100%); /* Gradiente ajustado para o lado oposto */
+  border-radius: 10px; /* Suavização das bordas */
+  flex-direction: row; /* Ajuste para alinhar texto à esquerda e imagem à direita, se necessário */
+}
+
+
+
+
+.team-image-1 {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Confirmar compatibilidade com animações */
+  border-radius: 5%; /* Torna a imagem circular */
+}
+
+.team-image-1:hover {
+  transform: scale(1.05);
+}
+
+.member-info-1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #333; /* Melhora a legibilidade */
+}
+
+.fa-linkedin-team-1 {
+  font-size: 30px;
+  color: #FFF; /* Utiliza a cor primária */
+  transition: transform 0.3s ease-in-out; /* Confirma a suavidade da transformação */
+  cursor: pointer;
+}
+
+.fa-linkedin-team-1:hover {
+  transform: scale(1.1);
+  color:#333; /* Muda a cor durante o hover */
+}
+
+@media (max-width: 768px) {
+  .team-member-1 {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+  }
+
+  .team-image-1, .member-info-1 {
+      width: 100%;
+  }
+
+  .fa-linkedin-team-1 {
+      align-self: center;
+      margin-top: 10px; /* Adiciona espaço acima do ícone no layout móvel */
+  }
+}
