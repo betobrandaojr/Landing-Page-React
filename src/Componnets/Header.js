@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './Header.css'; // Certifique-se de que o caminho para o CSS está correto
+import './Header.css';
 import VideoHeader from '../Assets/video/Video-3.mp4';
-import { FaArrowDown } from 'react-icons/fa'; // Garanta que o react-icons foi instalado
+import { FaArrowDown } from 'react-icons/fa';
 
-const items = ["Batata", "Cenoura", "Abacate"]; // Itens a serem exibidos
+const items = ["Batata", "Cenoura", "Abacate"];
 
 const Header = () => {
     const [currentItem, setCurrentItem] = useState(0);
@@ -12,12 +12,12 @@ const Header = () => {
     useEffect(() => {
         const fadeEffect = setTimeout(() => {
             setFadeIn(false);
-        }, 2000); // Inicia o fade out depois de 2 segundos
+        }, 2000); 
 
         const changeItem = setTimeout(() => {
             setCurrentItem((currentItem + 1) % items.length);
             setFadeIn(true);
-        }, 4000); // Muda o item e inicia o fade in após 4 segundos
+        }, 4000); 
 
         return () => {
             clearTimeout(fadeEffect);
@@ -27,7 +27,7 @@ const Header = () => {
 
     const scrollToNextComponent = () => {
         window.scrollTo({
-            top: document.documentElement.clientHeight, // Ajuste esse valor conforme necessário
+            top: document.documentElement.clientHeight,
             behavior: 'smooth'
         });
     };
@@ -37,13 +37,13 @@ const Header = () => {
             <video autoPlay loop muted className="video-background">
                 <source src={VideoHeader} type="video/mp4" />
             </video>
-            <div className="text-container fade-in-on-load"> {/* Aplica o fade in ao texto */}
+            <div className="text-container fade-in-on-load">
                 <div className="static-text">Nesta empresa vendemos:</div>
                 <div className={`dynamic-text ${fadeIn ? 'fade-in' : 'fade-out'}`}>
                     {items[currentItem]}
                 </div>
             </div>
-            <button className="scroll-down-button fade-in-on-load" onClick={scrollToNextComponent}> {/* Aplica o fade in ao botão */}
+            <button className="scroll-down-button fade-in-on-load" onClick={scrollToNextComponent}>
                 <FaArrowDown />
             </button>
         </div>

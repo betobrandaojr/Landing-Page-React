@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Profile-Right.css';
-import perfil1 from '../Assets/img/perfil-3.webp';
+import perfil1 from '../Assets/img/perfil-4.jpg';
 
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
-  hidden: { opacity: 0, y: 20 }, // Ajuste sutil na propriedade y para melhorar a fluidez
+  hidden: { opacity: 0, y: 20 }, 
 };
 
 const Profile1 = () => {

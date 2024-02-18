@@ -7,7 +7,7 @@ import perfil1 from '../Assets/img/perfil-4.jpg';
 
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
-  hidden: { opacity: 0, y: 20 }, // Ajuste sutil na propriedade y para melhorar a fluidez
+  hidden: { opacity: 0, y: 20 },
 };
 
 const Profile2 = () => {

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css';
-import Logo from '../Assets/img/emogi.webp';
+import Logo from '../Assets/img/Logo.png';
 
 function Navbar() {
     const [scrolled, setScrolled] = useState(false);

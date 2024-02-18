@@ -1,6 +1,17 @@
+:root {
+    --scrollbar-track-color: #f1f1f1;
+    --scrollbar-thumb-color: #7F00B2;
+    --navbar-background-color: transparent;
+    --navbar-scrolled-background: linear-gradient(to bottom right,#000000, #000000 40%);
+    --navbar-scrolled-box-shadow: 0 2px 4px rgb(0, 0, 0);
+    --navbar-link-color: #fff;
+    --navbar-link-hover-color: #7F00B2;
+    --navbar-icon-color: #ffffff;
+    --navbar-icon-hover-color: #7F00B2;
+}
+
 * {
     box-sizing: border-box;
-    
 }
 
 ::-webkit-scrollbar {
@@ -8,11 +19,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--scrollbar-track-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #7F00B2;
+    background: var(--scrollbar-thumb-color);
 }
 
 .navbar {
@@ -20,35 +31,36 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 16px;
-    background-color: transparent;
+    background-color: var(--navbar-background-color);
     transition: background-color 0.32s ease-in-out;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     caret-color: transparent;
-    
 }
 
 .navbar-scrolled {
-    background-color: #000000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: var(--navbar-scrolled-background);
+
 }
+
 .navbar-logo img {
-    width: 36px;
+    width: 44px;
     height: auto;
 }
+
 .navbar-links a {
-    color: #fff;
+    color: var(--navbar-link-color);
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s;
-    font-weight: bold;
-    padding-right: px;
+    font-weight: 600;;
+    font-size: 16px;
 }
 
 .navbar-links a:hover {
-    color: #7F00B2;
+    color: var(--navbar-link-hover-color);
 }
 
 .navbar-icons {
@@ -58,18 +70,18 @@
 }
 
 .navbar-icons a {
-    color: #ffffff;
-    margin-right: 5px; 
+    color: var(--navbar-icon-color);
+    margin-right: 5px;
     transition: transform 0.3s, color 0.3s;
 }
 
 .navbar-icons a:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .navbar-icons a:hover {
     transform: scale(1.1);
-    color: #7F00B2;
+    color: var(--navbar-icon-hover-color);
 }
 
 .navbar-icons svg {
@@ -108,7 +120,7 @@
 
     .navbar-links a {
         font-size: 10px;
-        margin: 0 2vw; 
+        margin: 0 2vw;
     }
     
     .navbar-logo img {

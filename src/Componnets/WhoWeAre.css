@@ -1,12 +1,18 @@
+.div-container-whoweare{
+    width: 100%;
+    background-color: #121212;
+}
 .counteiner-whoweare{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    
 }
 .WhoWeAre-text{
-    padding: 200px;
+    padding: 210px;
+
+    margin-top: -2rem;
 }
 
 .WhoWeAre-text p, h1 {
@@ -17,6 +23,7 @@
     max-width: 90%;
     line-height: 1.6;
     animation: fadeIn 4s ease-out forwards;
+    color: rgb(255, 255, 255);
 }
 
 .Title-WhoWeAre {
@@ -25,6 +32,8 @@
     align-items: center;
     width: 100%;
     text-align: center;
+    font-size: 3rem;
+    color: #6a10d1;
     
 }
 
